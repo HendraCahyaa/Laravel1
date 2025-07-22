@@ -36,43 +36,19 @@
           </div>
         </div>
 
-        <div class="row feature-boxes">
-          <div class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="feature-box">
-              <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
-                <i class="bi bi-gear"></i>
-              </div>
-              <div class="feature-content">
-                <h3 class="feature-title">Rapid Deployment</h3>
-                <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
-              </div>
-            </div>
-          </div>
+     <div class="row feature-boxes">
+      <x-feature title="pertama" icon="gear">
+        <b>Ini adalah konten</b> untuk bagian pertama yang akan dianimasikan dengan AOS
+    </x-feature>
+      <x-feature title="kedua" icon="airplane">
+        <b>Ini adalah konten</b> untuk bagian kedua yang akan dianimasikan dengan AOS
+    </x-feature>
+      <x-feature title="ketiga" icon="airplane">
+        <b>Ini adalah konten</b> untuk bagian ketiga yang akan dianimasikan dengan AOS
+    </x-feature>
 
-          <div class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="feature-box">
-              <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
-                <i class="bi bi-window"></i>
-              </div>
-              <div class="feature-content">
-                <h3 class="feature-title">Advanced Security</h3>
-                <p class="feature-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
-            <div class="feature-box">
-              <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
-                <i class="bi bi-headset"></i>
-              </div>
-              <div class="feature-content">
-                <h3 class="feature-title">Dedicated Support</h3>
-                <p class="feature-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+     </div>
+      
 
       </div>
 
@@ -138,65 +114,27 @@
         <div class="steps-5">
           <div class="process-container">
 
-            <div class="process-item" data-aos="fade-up" data-aos-delay="200">
-              <div class="content">
-                <span class="step-number">01</span>
-                <div class="card-body">
-                  <div class="step-icon">
-                    <i class="bi bi-pencil-square"></i>
-                  </div>
-                  <div class="step-content">
-                    <h3>Project Planning</h3>
-                    <p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End Process Item -->
-
-            <div class="process-item" data-aos="fade-up" data-aos-delay="300">
-              <div class="content">
-                <span class="step-number">02</span>
-                <div class="card-body">
-                  <div class="step-icon">
-                    <i class="bi bi-gear"></i>
-                  </div>
-                  <div class="step-content">
-                    <h3>Development Phase</h3>
-                    <p>Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</p>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End Process Item -->
-
-            <div class="process-item" data-aos="fade-up" data-aos-delay="400">
-              <div class="content">
-                <span class="step-number">03</span>
-                <div class="card-body">
-                  <div class="step-icon">
-                    <i class="bi bi-search"></i>
-                  </div>
-                  <div class="step-content">
-                    <h3>Testing &amp; QA</h3>
-                    <p>Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero.</p>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End Process Item -->
-
-            <div class="process-item" data-aos="fade-up" data-aos-delay="500">
-              <div class="content">
-                <span class="step-number">04</span>
-                <div class="card-body">
-                  <div class="step-icon">
-                    <i class="bi bi-rocket-takeoff"></i>
-                  </div>
-                  <div class="step-content">
-                    <h3>Launch &amp; Support</h3>
-                    <p>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt.</p>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End Process Item -->
+            <div class="process-item">
+            <x-processitem title="Project Planning" icon="pencil-square" step="01">
+              <p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim</p>
+          </x-processitem>
+            </div>
+  
+          <div class="process-item">
+            <x-processitem title="Development Phase" icon="gear" step="02">
+              <p>Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</p>
+          </x-processitem>
+          </div>
+          <div class="process-item">
+            <x-processitem title="Testing &amp; QA" icon="search" step="03">
+              <p>Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero</p>
+          </x-processitem>
+          </div>
+          <div class="process-item">
+            <x-processitem title="Launch &amp; Support" icon="rocket-takeoff" step="04">
+              <p>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt.</p>
+          </x-processitem>
+          </div>
 
           </div>
         </div>
@@ -218,101 +156,36 @@
 
         <div class="row justify-content-center g-5">
 
-          <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="bi bi-code-slash"></i>
-              </div>
-              <div class="service-content">
-                <h3>Custom Web Development</h3>
-                <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="service-link">
-                  <span>Learn More</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="bi bi-phone-fill"></i>
-              </div>
-              <div class="service-content">
-                <h3>Mobile App Solutions</h3>
-                <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus magna justo, lacinia eget consectetur sed. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada.</p>
-                <a href="#" class="service-link">
-                  <span>Learn More</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-md-6" data-aos="fade-right" data-aos-delay="200">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="bi bi-palette2"></i>
-              </div>
-              <div class="service-content">
-                <h3>UI/UX Design</h3>
-                <p>Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
-                <a href="#" class="service-link">
-                  <span>Learn More</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="bi bi-bar-chart-line"></i>
-              </div>
-              <div class="service-content">
-                <h3>Digital Marketing</h3>
-                <p>Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Curabitur aliquet quam id dui posuere blandit.</p>
-                <a href="#" class="service-link">
-                  <span>Learn More</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-md-6" data-aos="fade-right" data-aos-delay="300">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="bi bi-cloud-check"></i>
-              </div>
-              <div class="service-content">
-                <h3>Cloud Computing</h3>
-                <p>Curabitur aliquet quam id dui posuere blandit. Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p>
-                <a href="#" class="service-link">
-                  <span>Learn More</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="bi bi-shield-lock"></i>
-              </div>
-              <div class="service-content">
-                <h3>Cybersecurity Solutions</h3>
-                <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec sollicitudin molestie malesuada. Curabitur arcu erat, accumsan id imperdiet et. Proin eget tortor risus.</p>
-                <a href="#" class="service-link">
-                  <span>Learn More</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
+        <div class="col-md-5 justify-content-center g-5 ">
+        <x-serviceitem icon="code-slash" title="Custom Web Development" step="Learn More" icon2="arrow-right">
+        <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </x-serviceitem>
+        </div>
+        <div class="col-md-5 justify-content-center g-5">
+        <x-serviceitem icon="phone-fill" title="Mobile App Solution" step="Learn More" icon2="arrow-right">
+        <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </x-serviceitem>
+        </div>
+        <div class="col-md-5 justify-content-center g-5">
+        <x-serviceitem icon="palette2" title="UI/UX Design" step="Learn More" icon2="arrow-right">
+        <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </x-serviceitem>
+        </div>
+        <div class="col-md-5 justify-content-center g-5">
+        <x-serviceitem icon="bar-chart-line" title="Digital Marketing" step="Learn More" icon2="arrow-right">
+        <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </x-serviceitem>
+        </div>
+        <div class="col-md-5 justify-content-center g-5">
+        <x-serviceitem icon="cloud-check" title="Cloud Computing" step="Learn More" icon2="arrow-right">
+        <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </x-serviceitem>
+        </div>
+        <div class="col-md-5 justify-content-center g-5">
+        <x-serviceitem icon="shield-lock" title="Cybersecurity Solutions" step="Learn More" icon2="arrow-right">
+        <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </x-serviceitem>
+        </div>
 
         </div>
 
@@ -340,45 +213,18 @@
           </div>
           <div class="col-lg-6">
             <div class="services-list">
-              <div class="service-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
-                <div class="service-icon">
-                  <i class="bi bi-code-square"></i>
-                </div>
-                <div class="service-content">
-                  <h4><a href="service-details.html">Software Engineering</a></h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipiscing.</p>
-                </div>
-              </div><!-- End Service Item -->
-
-              <div class="service-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
-                <div class="service-icon">
-                  <i class="bi bi-graph-up"></i>
-                </div>
-                <div class="service-content">
-                  <h4><a href="service-details.html">Business Analytics</a></h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipiscing.</p>
-                </div>
-              </div><!-- End Service Item -->
-
-              <div class="service-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="400">
-                <div class="service-icon">
-                  <i class="bi bi-phone"></i>
-                </div>
-                <div class="service-content">
-                  <h4><a href="service-details.html">Mobile Solutions</a></h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipiscing.</p>
-                </div>
-              </div><!-- End Service Item -->
-
-              <div class="service-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="500">
-                <div class="service-icon">
-                  <i class="bi bi-gear"></i>
-                </div>
-                <div class="service-content">
-                  <h4><a href="service-details.html">Tech Infrastructure</a></h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipiscing.</p>
-                </div>
-              </div><!-- End Service Item -->
+              <x-servicelist title="Software Engineering" icon="code-square">
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing.</p>
+              </x-servicelist>
+              <x-servicelist title="Business Analytics" icon="graph-up">
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing.</p>
+              </x-servicelist>
+              <x-servicelist title="Mobile Solutions" icon="phone">
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing.</p>
+              </x-servicelist>
+              <x-servicelist title="Tech Infrastructure" icon="gear">
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing.</p>
+              </x-servicelist>
             </div>
           </div>
         </div>
@@ -457,120 +303,24 @@
 
           <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="/invent/assets/img/portfolio/portfolio-1.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="/invent/assets/img/portfolio/portfolio-1.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <span class="category">Web Design</span>
-                  <h3>Modern Dashboard Interface</h3>
-                  <p>Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis.</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="/invent/assets/img/portfolio/portfolio-10.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="/invent/assets/img/portfolio/portfolio-10.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <span class="category">Graphics</span>
-                  <h3>Creative Brand Identity</h3>
-                  <p>Vestibulum id ligula porta felis euismod semper at vulputate.</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-motion">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="/invent/assets/img/portfolio/portfolio-7.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="/invent/assets/img/portfolio/portfolio-7.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-motion"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <span class="category">Motion</span>
-                  <h3>Product Animation Reel</h3>
-                  <p>Donec ullamcorper nulla non metus auctor fringilla dapibus.</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-brand">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="/invent/assets/img/portfolio/portfolio-4.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="/invent/assets/img/portfolio/portfolio-4.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-brand"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <span class="category">Branding</span>
-                  <h3>Luxury Brand Package</h3>
-                  <p>Aenean lacinia bibendum nulla sed consectetur elit.</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="/invent/assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="/invent/assets/img/portfolio/portfolio-2.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <span class="category">Web Design</span>
-                  <h3>E-commerce Platform</h3>
-                  <p>Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="/invent/assets/img/portfolio/portfolio-11.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="/invent/assets/img/portfolio/portfolio-11.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <span class="category">Graphics</span>
-                  <h3>Digital Art Collection</h3>
-                  <p>Cras mattis consectetur purus sit amet fermentum.</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
+          <x-portfolio img="/invent/assets/img/portfolio/portfolio-1.webp" href="/invent/assets/img/portfolio/portfolio-1.webp" filter="web" data="web" step="Web Design" title="Modern Dashboard Interface">
+            <p>Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis.</p>
+          </x-portfolio>
+          <x-portfolio img="/invent/assets/img/portfolio/portfolio-10.webp" href="/invent/assets/img/portfolio/portfolio-10.webp" filter="graphics" data="graphics" step="Graphics" title="Creative Brand Identity">
+            <p>Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis.</p>
+          </x-portfolio>
+          <x-portfolio img="/invent/assets/img/portfolio/portfolio-7.webp" href="/invent/assets/img/portfolio/portfolio-7.webp" filter="motion" data="motion" step="Motion" title="Product Animation Reel">
+            <p>Donec ullamcorper nulla non metus auctor fringilla dapibus.</p>
+          </x-portfolio>
+          <x-portfolio img="/invent/assets/img/portfolio/portfolio-4.webp" href="/invent/assets/img/portfolio/portfolio-4.webp" filter="brand" data="brand" step="Branding" title="Luxury Brand Package">
+            <p><p>Aenean lacinia bibendum nulla sed consectetur elit.</p></p>
+          </x-portfolio>
+          <x-portfolio img="/invent/assets/img/portfolio/portfolio-2.webp" href="/invent/assets/img/portfolio/portfolio-2.webp" filter="web" data="web" step="Web Design" title="E-commerce Platform">
+            <p>Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          </x-portfolio>
+          <x-portfolio img="/invent/assets/img/portfolio/portfolio-11.webp" href="/invent/assets/img/portfolio/portfolio-11.webp" filter="graphics" data="graphics" step="Graphics" title="Digital Art Collection">
+            <p>Cras mattis consectetur purus sit amet fermentum.</p>
+          </x-portfolio>
           </div><!-- End Portfolio Container -->
 
         </div>
@@ -593,119 +343,22 @@
         <div class="row g-4 justify-content-center">
 
           <!-- Basic Plan -->
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="pricing-card">
-              <h3>Basic Plan</h3>
-              <div class="price">
-                <span class="currency">$</span>
-                <span class="amount">9.9</span>
-                <span class="period">/ month</span>
-              </div>
-              <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam.</p>
-
-              <h4>Featured Included:</h4>
-              <ul class="features-list">
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Duis aute irure dolor
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Excepteur sint occaecat
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Nemo enim ipsam voluptatem
-                </li>
-              </ul>
-
-              <a href="#" class="btn btn-primary">
-                Buy Now
-                <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
+          <x-pricing title="Basic Plan" price="9.9" btn="primary" :delay="100" :ispopular="false"
+          deskripsi="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam."
+          :features="['Duis aute irure dolor','Excepteur sint occaecat','Nemo enim ipsam voluptatem']">
+          </x-pricing>
 
           <!-- Standard Plan -->
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="pricing-card popular">
-              <div class="popular-badge">Most Popular</div>
-              <h3>Standard Plan</h3>
-              <div class="price">
-                <span class="currency">$</span>
-                <span class="amount">19.9</span>
-                <span class="period">/ month</span>
-              </div>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
-
-              <h4>Featured Included:</h4>
-              <ul class="features-list">
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Lorem ipsum dolor sit amet
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Consectetur adipiscing elit
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Sed do eiusmod tempor
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Ut labore et dolore magna
-                </li>
-              </ul>
-
-              <a href="#" class="btn btn-light">
-                Buy Now
-                <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
+          <x-pricing title="Standar Plan" price="19.9" btn="light" :delay="200" :ispopular="true"
+          deskripsi="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum."
+          :features="['Duis aute irure dolor','Excepteur sint occaecat','Nemo enim ipsam voluptatem','ut labore et dolar magna']">
+          </x-pricing>
 
           <!-- Premium Plan -->
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="pricing-card">
-              <h3>Premium Plan</h3>
-              <div class="price">
-                <span class="currency">$</span>
-                <span class="amount">39.9</span>
-                <span class="period">/ month</span>
-              </div>
-              <p class="description">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae.</p>
-
-              <h4>Featured Included:</h4>
-              <ul class="features-list">
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Temporibus autem quibusdam
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Saepe eveniet ut et voluptates
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Nam libero tempore soluta
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Cumque nihil impedit quo
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Maxime placeat facere possimus
-                </li>
-              </ul>
-
-              <a href="#" class="btn btn-primary">
-                Buy Now
-                <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
+          <x-pricing title="Premium Plan" price="39.9" btn="primary" :delay="300" :ispopular="false"
+          deskripsi="Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae."
+          :features="['Duis aute irure dolor','Excepteur sint occaecat','Nemo enim ipsam voluptatem','Temporibus autem quibusdam','Saepe eveniet ut et voluptates']">
+          </x-pricing>
 
         </div>
 
@@ -815,89 +468,18 @@
 
         <div class="row g-5">
 
-          <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
-            <div class="team-card">
-              <div class="team-image">
-                <img src="/invent/assets/img/person/person-m-1.webp" class="img-fluid" alt="">
-                <div class="team-overlay">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
-                  <div class="team-social">
-                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="team-content">
-                <h4>Daniel Mitchell</h4>
-                <span class="position">Creative Director</span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
-            <div class="team-card">
-              <div class="team-image">
-                <img src="/invent/assets/img/person/person-f-6.webp" class="img-fluid" alt="">
-                <div class="team-overlay">
-                  <p>Aliquam tincidunt mauris eu risus. Vestibulum auctor dapibus neque. Nunc dignissim risus id metus.</p>
-                  <div class="team-social">
-                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="team-content">
-                <h4>Rebecca Taylor</h4>
-                <span class="position">Lead Developer</span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
-            <div class="team-card">
-              <div class="team-image">
-                <img src="/invent/assets/img/person/person-m-6.webp" class="img-fluid" alt="">
-                <div class="team-overlay">
-                  <p>Cras ornare tristique elit. Integer in dui quis est placerat ornare. Phasellus a lacus a risus.</p>
-                  <div class="team-social">
-                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="team-content">
-                <h4>Marcus Johnson</h4>
-                <span class="position">UI/UX Designer</span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
-            <div class="team-card">
-              <div class="team-image">
-                <img src="/invent/assets/img/person/person-f-3.webp" class="img-fluid" alt="">
-                <div class="team-overlay">
-                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                  <div class="team-social">
-                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="team-content">
-                <h4>Jessica Parker</h4>
-                <span class="position">Marketing Strategist</span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
+          <x-team name="Daniel Mitchell" :delay="100" img="/invent/assets/img/person/person-m-1.webp" span="Creative Director">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
+          </x-team><!-- End Team Member -->
+          <x-team name="Rebecca Taylor" :delay="200" img="/invent/assets/img/person/person-f-6.webp" span="Lead Developer">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
+          </x-team><!-- End Team Member -->
+          <x-team name="Marcus Johnson" :delay="300" img="/invent/assets/img/person/person-m-6.webp" span="UI/UX Design">
+            <p>Cras ornare tristique elit. Integer in dui quis est placerat ornare. Phasellus a lacus a risus.</p>
+          </x-team><!-- End Team Member -->
+          <x-team name="Jessica Parker" :delay="400" img="/invent/assets/img/person/person-f-3.webp" span="Marketing Strategist">
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+          </x-team><!-- End Team Member -->
 
         </div>
 
@@ -942,167 +524,24 @@
             }
           </script>
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="testimonial-card">
-                <div class="testimonial-content">
-                  <p>
-                    <i class="bi bi-quote quote-icon"></i>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-                </div>
-                <div class="testimonial-profile">
-                  <div class="rating">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <div class="profile-info">
-                    <img src="/invent/assets/img/person/person-m-8.webp" alt="Profile Image">
-                    <div>
-                      <h3>Robert Johnson</h3>
-                      <h4>Marketing Director</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-card">
-                <div class="testimonial-content">
-                  <p>
-                    <i class="bi bi-quote quote-icon"></i>
-                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et maecenas aliquam.
-                  </p>
-                </div>
-                <div class="testimonial-profile">
-                  <div class="rating">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <div class="profile-info">
-                    <img src="/invent/assets/img/person/person-f-3.webp" alt="Profile Image">
-                    <div>
-                      <h3>Lisa Williams</h3>
-                      <h4>Product Manager</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-card">
-                <div class="testimonial-content">
-                  <p>
-                    <i class="bi bi-quote quote-icon"></i>
-                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram.
-                  </p>
-                </div>
-                <div class="testimonial-profile">
-                  <div class="rating">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <div class="profile-info">
-                    <img src="/invent/assets/img/person/person-f-10.webp" alt="Profile Image">
-                    <div>
-                      <h3>Emma Parker</h3>
-                      <h4>UX Designer</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-card">
-                <div class="testimonial-content">
-                  <p>
-                    <i class="bi bi-quote quote-icon"></i>
-                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit.
-                  </p>
-                </div>
-                <div class="testimonial-profile">
-                  <div class="rating">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <div class="profile-info">
-                    <img src="/invent/assets/img/person/person-m-5.webp" alt="Profile Image">
-                    <div>
-                      <h3>David Miller</h3>
-                      <h4>Senior Developer</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-card">
-                <div class="testimonial-content">
-                  <p>
-                    <i class="bi bi-quote quote-icon"></i>
-                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat.
-                  </p>
-                </div>
-                <div class="testimonial-profile">
-                  <div class="rating">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <div class="profile-info">
-                    <img src="/invent/assets/img/person/person-m-2.webp" alt="Profile Image">
-                    <div>
-                      <h3>Michael Davis</h3>
-                      <h4>CEO &amp; Founder</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-card">
-                <div class="testimonial-content">
-                  <p>
-                    <i class="bi bi-quote quote-icon"></i>
-                    Eius ipsam praesentium dolor quaerat inventore rerum odio. Quos laudantium adipisci eius. Accusamus qui iste cupiditate sed temporibus est aspernatur.
-                  </p>
-                </div>
-                <div class="testimonial-profile">
-                  <div class="rating">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <div class="profile-info">
-                    <img src="/invent/assets/img/person/person-f-7.webp" alt="Profile Image">
-                    <div>
-                      <h3>Sarah Thompson</h3>
-                      <h4>Art Director</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
+          <x-testimoni name="Robert Johnson" pekerjaan="Marketing Director" img="/invent/assets/img/person/person-m-8.webp">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Sed do eiusmod tempor incididunt.
+          </x-testimoni><!-- End testimonial item -->
+          <x-testimoni name="Lisa williams" pekerjaan="Product Manager" img="/invent/assets/img/person/person-f-3.webp">
+            LProin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et maecenas aliquam.
+          </x-testimoni><!-- End testimonial item -->
+          <x-testimoni name="Emma Parker" pekerjaan="UX Designer" img="/invent/assets/img/person/person-f-10.webp">
+            Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram.
+          </x-testimoni><!-- End testimonial item -->
+          <x-testimoni name="David Miller" pekerjaan="Senior Developer" img="/invent/assets/img/person/person-m-5.webp">
+            Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit.
+          </x-testimoni><!-- End testimonial item -->
+          <x-testimoni name="Michael Davis" pekerjaan="CEO &amp; Founder" img="/invent/assets/img/person/person-m-2.webp">
+            Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat.
+          </x-testimoni><!-- End testimonial item -->
+          <x-testimoni name="Sarah Thompson" pekerjaan="Art Director" img="/invent/assets/img/person/person-f-7.webp">
+            Eius ipsam praesentium dolor quaerat inventore rerum odio. Quos laudantium adipisci eius. Accusamus qui iste cupiditate sed temporibus est aspernatur.
+          </x-testimoni><!-- End testimonial item -->
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -1123,38 +562,18 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4 mb-5">
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="info-card">
-              <div class="icon-box">
-                <i class="bi bi-geo-alt"></i>
-              </div>
-              <h3>Our Address</h3>
+            <x-contact title="Our Address" icon="geo-alt" :delay="100">
               <p>2847 Rainbow Road, Springfield, IL 62701, USA</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="info-card">
-              <div class="icon-box">
-                <i class="bi bi-telephone"></i>
-              </div>
-              <h3>Contact Number</h3>
+            </x-contact>
+            <x-contact title="Contact Number" icon="telephone" :delay="200">
               <p>Mobile: +1 (555) 123-4567<br>
                 Email: info@example.com</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="info-card">
-              <div class="icon-box">
-                <i class="bi bi-clock"></i>
-              </div>
-              <h3>Opening Hour</h3>
+            </x-contact>
+            <x-contact title="Opening Hour" icon="clock" :delay="300">
               <p>Monday - Saturday: 9:00 - 18:00<br>
                 Sunday: Closed</p>
-            </div>
+            </x-contact>
           </div>
-        </div>
 
         <div class="row">
           <div class="col-lg-12">
